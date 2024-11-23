@@ -1,4 +1,3 @@
-group 'com.github.contactlutforrahman.flutter_qr_bar_scanner'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -8,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
@@ -22,7 +21,8 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
+    namespace 'com.github.contactlutforrahman.flutter_qr_bar_scanner'
 
     defaultConfig {
         minSdkVersion 16
